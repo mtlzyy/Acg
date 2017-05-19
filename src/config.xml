@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<models>
+	<model id="login">
+		<model-class>com.acg.model.LoginModel</model-class>
+		<forward name="success">main.do</forward>
+		<forward name="error">login.jsp</forward>
+	</model>
+	<model id="regist">
+		<model-class>com.acg.model.RegistModel</model-class>
+		<forward name="success">WEB-INF/sendEmailSuccess.jsp</forward>
+		<forward name="error">regist.jsp</forward>
+	</model>
+	<model id="userInfo">
+		<model-class>com.acg.model.UserInfoModel</model-class>
+		<forward name="success">WEB-INF/userInfo.jsp</forward>
+	</model>
+	<model id="activation">
+		<model-class>com.acg.model.ActivationModel</model-class>
+		<forward name="success">index.jsp</forward>
+		<forward name="error">WEB-INF/overdue.jsp</forward>
+	</model>
+	<model id="video">
+		<model-class>com.acg.model.VideoModel</model-class>
+		<forward name="success">video.jsp</forward>
+	</model>
+	<model id="main">
+		<model-class>com.acg.model.MainModel</model-class>
+		<forward name="success">main.jsp</forward>
+	</model>
+	<model id="search">
+		<model-class>com.acg.model.SearchModel</model-class>
+		<forward name="success">WEB-INF/search.jsp</forward>
+		<forward name="error">nothing.jsp</forward>
+	</model>
+	<model id="searchBox">
+		<model-class>com.acg.model.SearchBoxModel</model-class>
+		<forward name="success">WEB-INF/searchbox.jsp</forward>
+	</model>
+	<model id="changeRanking">
+		<model-class>com.acg.model.ChangeRankingModel</model-class>
+		<forward name="success">ajax_ranking.jsp</forward>
+	</model>
+	<model id="upload">
+		<model-class>com.acg.model.UploadModel</model-class>
+		<forward name="success">WEB-INF/success.jsp</forward>
+		<forward name="error">WEB-INF/mypost.jsp</forward>
+	</model>
+		<model id="changeVideoList">
+		<model-class>com.acg.model.ChangeVideoListModel</model-class>
+		<forward name="success">ajax_videoList.jsp</forward>
+	</model>
+	<model id="boardVideoList">
+		<model-class>com.acg.model.BoardVideoListModel</model-class>
+		<forward name="success">boardVideoList.jsp</forward>
+	</model>
+	<model id="board">
+		<model-class>com.acg.model.BoardModel</model-class>
+		<forward name="success">WEB-INF/board.jsp</forward>
+	</model>
+	<model id="mypost">
+		<model-class>com.acg.model.MyPostModel</model-class>
+		<forward name="success">WEB-INF/mypost.jsp</forward>
+		<forward name="error">login.jsp</forward>
+	</model>
+	<model id="logout">
+		<model-class>com.acg.model.LogOutModel</model-class>
+		<forward name="success">main.do</forward>
+	</model>
+	<model id="visitor">
+		<model-class>com.acg.model.VisitorModel</model-class>
+		<forward name="success">WEB-INF/showtovisitor.jsp</forward>
+	</model>
+	<model id="userself">
+		<model-class>com.acg.model.UserVideoModel</model-class>
+		<forward name="success">WEB-INF/showtoself.jsp</forward>
+	</model>
+	<model id="favourite">
+		<model-class>com.acg.model.FavouriteModel</model-class>
+		<forward name="success">WEB-INF/favourite.jsp</forward>
+	</model>
+	<model id="detailInfo">
+		<model-class>com.acg.model.DetailInfoModel</model-class>
+		<forward name="success">WEB-INF/detailInfo.jsp</forward>
+	</model>
+	<model id="changeInfo">
+		<model-class>com.acg.model.ChangeInfoModel</model-class>
+		<forward name="success">userInfo.do</forward>
+		<forward name="error">userInfo.do</forward>
+	</model>
+	<model id="board2">
+		<model-class>com.acg.model.BoardModel2</model-class>
+		<forward name="success">WEB-INF/board2.jsp</forward>
+	</model>
+	<model id="headUpload">
+		<model-class>com.acg.model.HeadUploadModel</model-class>
+		<forward name="success">userInfo.do</forward>
+	</model>	
+</models>
